@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--
+<div id="thumbs" data-autovideo="true">
+    <div class="thumb">
+        <img src="D://img//pk1.jpg" /><div class="playvideo"></div>
+    </div>
+    <div class="thumb">
+        <img src="D://img//pk2.jpg" />
+    </div>
+    <div class="thumb">
+        <img src="D://img//pk3.jpg" /><div class="playvideo"></div>
+    </div>
+	 <div class="thumb">
+        <img src="D://img//pk4.jpg" /><div class="playvideo"></div>
+    </div>
+	 <div class="thumb">
+        <img src="D://img//pk5.jpg" /><div class="playvideo"></div>
+    </div>
+</div>
+
+
+<audio controls>
+  <source src="D://Users/palladi/Desktop/Hack/img/audio.wav" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>-->
+
+<video  id="video1" width="400"  controls>
+  <source src="D://Users/palladi/Desktop/Hack/img/out3.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<div style="dispaly:none">
+<audio id="audio1">
+  <source src="D://Users/palladi/Desktop/Hack/img/audio.wav" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+
+<div>
+ <button onclick="playPause()">Play/Pause</button> 
+</div>
+<script> 
+var myVideo = document.getElementById("video1"); 
+var myAudio = document.getElementById("audio1"); 
+
+function playPause() { 
+    if (myVideo.paused) {
+        myVideo.play(); 
+		myAudio.play();
+		}
+    else {
+        myVideo.pause(); 
+		myAudio.pause();
+		}
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+
+
+</div>
+</body>
+</html>

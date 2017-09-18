@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="files/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="files/bootstrap.min.css">
+    <link rel="stylesheet" href="files/font-awesome.min.css">
+   <style>
+      body, html {
+   
+    background-color:#f9f9f9;
+   
+}
+
+   </style>
+</head>
+<body>
+
+	<img src="files/Header1.JPG" alt="Image" style="margin-left:-7px" >
+	<img src="files/2.JPG" alt="Image" style="margin-left:3%" >
+	<img src="files/3.JPG" alt="Image" style="margin-left:3%" >
+	<img src="files/4.JPG" alt="Image" style="margin-left:3%" >
+	<img src="files/5.JPG" alt="Image" style="margin-left:3%" ></br>
+	<h1 style="color:#009286;font-size:28px;">Experience your Personalized Video Statement</h1></br>
+	<div style="float:left">
+		<img src="files/6.JPG" alt="Image"  ></br>
+		<img src="files/8.JPG" alt="Image"  >
+	</div>
+
+	<div style="float:right">
+		<img src="files/7.JPG" alt="Image" ></br>
+		<img src="files/9.JPG" alt="Image" >
+	</div>
+	<div align="center" >
+	<video id="video1" width="400" controls><source src="files/img/out3.mp4" type="video/mp4" controls>
+  		Your browser does not support HTML5 video.
+	</video></br>
+       
+            <button class="btn btn-success" onclick="playPause()" style="display:block">Play / Pause</button>
+         
+	</div>
+
+<div style="display:none;">
+<audio id="audio1">
+  <source src="files/img/audio.wav" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+<div>
+
+<script> 
+   
+var myVideo = document.getElementById("video1"); 
+var myAudio = document.getElementById("audio1"); 
+function playPause() {
+    
+
+    if (myVideo.paused) {
+        myVideo.play(); 
+        myAudio.play();
+		}
+    else {
+        myVideo.pause(); 
+		myAudio.pause();
+		}
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+</body>
+</html>
