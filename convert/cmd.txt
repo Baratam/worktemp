@@ -1,0 +1,2 @@
+https://superuser.com/questions/277642/how-to-merge-audio-and-video-file-in-ffmpeg
+ffmpeg -i out3.mp4 -i audio.wav -c copy output9.mp4
